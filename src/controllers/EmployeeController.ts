@@ -2,6 +2,7 @@ import express, { request }  from "express";
 import { EmployeeModel } from "../db/employee";
 
 export class EmployeeController {
+    
     getAllEmployee = async (req: express.Request, res: express.Response) => {
         try {
             const employees = await EmployeeModel.findAll();
